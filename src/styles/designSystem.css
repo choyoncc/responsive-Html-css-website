@@ -7,7 +7,7 @@
   --h5: 20px;
   --h6: 16px;
   --sub: 20px;
-  -level: 16px;
+  --label: 16px;
   --ls: 5px;
   --body: 14px;
 
@@ -27,6 +27,14 @@
   --color-green-75: rgba(116, 198, 157, 0.75);
   --color-green-50: rgba(116, 198, 157, 0.5);
   --color-green-25: rgba(116, 198, 157, 0.25);
+}
+/**
+  * ! Removing Default style of Browser
+**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /**
@@ -51,5 +59,24 @@
 }
 
 /**
-  * ! Style rules for Common Button's
+  * ! Style rules for text Color
 **/
+
+.text-white {
+  color: var(--color-white-100);
+}
+.text-dark {
+  color: var(--color-dark-100);
+}
+.text-green {
+  color: var(--color-green-100);
+}
+
+/**
+  * ! Style rules for Label
+**/
+.label {
+  font-family: var(--font-2);
+  font-size: var(--label);
+  letter-spacing: var(--ls);
+}
