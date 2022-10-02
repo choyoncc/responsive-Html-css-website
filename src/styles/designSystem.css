@@ -80,6 +80,8 @@
   font-family: var(--font-2);
   font-size: var(--label);
   letter-spacing: var(--ls);
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /**
@@ -123,6 +125,14 @@
   color: var(--color-white-100);
   text-decoration: none;
 }
+.navbar--icon {
+  display: none;
+}
+.navbar--icon i {
+  font-size: var(--h2);
+  color: var(--color-white-100);
+  cursor: pointer;
+}
 
 /**
   * ! Style rules for rule for common class
@@ -130,7 +140,37 @@
 .container {
   max-width: 1140px;
   margin: auto;
+  align-items: center;
 }
+
+/* *
+  *! Section One Start
+* */
+
+/*Responsive Image */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 0px;
+  gap: 25px;
+}
+.flex {
+}
+
+.common-title {
+  text-transform: capitalize;
+  font-size: var(--h1);
+  font-weight: bold;
+  font-family: var(--font-1);
+}
+
+/* *
+  *! Section One Start
+* */
 
 /**
   * ! Start Media query
@@ -144,13 +184,40 @@
   .container {
     max-width: 740px;
   }
-  .navbar__menu {
-    display: none;
-  }
 }
 @media screen and (max-width: 768px) {
   .container {
     max-width: 500px;
+  }
+  .navbar__menu {
+    /* display: none; */
+    z-index: 1;
+    background-color: var(--color-green-100);
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    right: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .navbar__menu--1 {
+    margin-top: -200px;
+  }
+
+  .navbar--icon {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .hidden {
+    z-index: -1;
+    opacity: 0%;
   }
 }
 @media screen and (max-width: 568px) {

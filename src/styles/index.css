@@ -1,0 +1,13 @@
+/* 
+*! Style rules for section One 
+*/
+
+.sectionOne__Left--text {
+  font-size: var(--body);
+  color: var(--color-white-75);
+  font-family: var(--font-2);
+}
+.sectionOne__Left--text  p{
+    text-align: justify;
+    text-justify: inter-word;
+}
