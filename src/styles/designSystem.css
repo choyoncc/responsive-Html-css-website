@@ -44,14 +44,14 @@
 
 .white-btn,
 .dark-btn {
-  cursor: pointer;
   color: var(--color-dark-100);
   background-color: var(--color-white-100);
-  font-size: var(--h5);
   font-family: var(--font-2);
-  border: none;
-  border-radius: 8px;
+  font-size: var(--h5);
   padding: 10px 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
 
 .dark-btn {
@@ -137,6 +137,10 @@
 /**
   * ! Style rules for rule for common class
 **/
+
+.text-center {
+  text-align: center;
+}
 .container {
   max-width: 1140px;
   margin: auto;
@@ -159,6 +163,9 @@
   gap: 25px;
 }
 .flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .common-title {
