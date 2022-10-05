@@ -181,6 +181,28 @@
   *! Section One Start
 * */
 
+
+
+/* Footer Section */
+.footerWrapper{
+  background-color: var(--color-green-100);
+}
+.footerLink{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.footerLink__social{
+  display: flex;
+  gap: 10px;
+}
+.footerLink__copyright{
+  font-size: var(--sub);
+  font-family: var(--font-2);
+}
+/* Footer Section */
+
 /**
   * ! Start Media query
 **/
@@ -233,6 +255,12 @@
   .hidden {
     z-index: -1;
     opacity: 0%;
+  }
+
+  .footerLink{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 568px) {
