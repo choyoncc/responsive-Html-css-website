@@ -70,6 +70,13 @@
 /* Section Four End  */
 
 /* Start Section Five */
+
+.sectionFive {
+  display: grid;
+  gap: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .sectionFive__content--text {
   font-size: var(--sub);
   font-family: var(--font-2);
@@ -81,7 +88,68 @@
   gap: 30px;
 }
 
-[class^='sectionFive__cards--']{
+[class^="sectionFive__cards--"] {
+  display: flex;
+  flex-direction: column;
   box-shadow: var(--shadow-1);
+  border-radius: 5px;
+  padding: 20px 25px;
+  gap: 15px;
+}
+[class^="sectionFive__cards--"] .name {
+  color: red;
+  font-family: var(--font-1);
+  font-size: var(--h5);
+  font-weight: bold;
+  text-align: center;
+}
+
+[class^="sectionFive__cards--"] .position {
+  font-family: var(--font-2);
+  color: var(--color-dark-75);
+  text-transform: uppercase;
+  text-align: center;
+}
+.sectionFive__btn {
+  justify-self: center;
 }
 /* End Section Five */
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+  .sectionFive__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .sectionTwo__logo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionOne__Right,
+  .sectionFour__Right {
+    order: 0;
+  }
+  .sectionOne__Left,
+  .sectionFour__left {
+    order: 1;
+  }
+
+  .sectionFive__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 568px) {
+  .sectionFive__cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .sectionTwo__logo {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}

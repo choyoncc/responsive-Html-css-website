@@ -193,8 +193,14 @@
   .container {
     max-width: 740px;
   }
+  .common-title {
+    font-size: var(--h4);
+  }
 }
 @media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .container {
     max-width: 500px;
   }
