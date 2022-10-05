@@ -54,6 +54,34 @@
   font-size: var(--body);
 }
 
-.sectionThree__right--btn{
+.sectionThree__right--btn {
   align-self: center;
 }
+
+/* Section Four Start  */
+.sectionFour__left--text {
+  color: var(--color-dark-50);
+  font-family: var(--font-2);
+  font-size: var(--body);
+}
+.sectionFour__left--btn {
+  align-self: center;
+}
+/* Section Four End  */
+
+/* Start Section Five */
+.sectionFive__content--text {
+  font-size: var(--sub);
+  font-family: var(--font-2);
+}
+
+.sectionFive__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+[class^='sectionFive__cards--']{
+  box-shadow: var(--shadow-1);
+}
+/* End Section Five */
