@@ -1,0 +1,29 @@
+
+
+.sectionone{
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sectionone__images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.sectionone__content--text{
+    font-size: var(--sub);
+    font-family: var(--font-2);
+}
+
+.sectionone__btn{
+    justify-self: center;
+}
+
+@media (max-width: 568px){
+    .sectionone__images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
