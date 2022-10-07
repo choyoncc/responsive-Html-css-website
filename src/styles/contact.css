@@ -1,0 +1,16 @@
+body{
+    min-height:  100vh;
+    display: grid;
+}
+
+.hero{
+    align-self: start;
+}
+.footerWrapper{
+    align-self: end;
+}
+
+.text{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
